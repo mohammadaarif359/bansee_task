@@ -32,7 +32,7 @@
 							@endforeach
 							
 							@if(session('results'))
-							<div class="text-sccuess">Correct Ans: {{ $correctAnswer }}</div>
+							<div class="text-sccuess">Correct Ans: {{ str_replace("option_","",$correctAnswer) }}</div>
 							@endif
                         </div>
                         @endforeach
